@@ -1,0 +1,11 @@
+// Vitest Snapshot v1, https://vitest.dev/guide/snapshot.html
+
+exports[`Section Component > renderiza corretamente com props 1`] = `
+<section>
+  <p
+    class="msg"
+  >
+    Nenhum ponto de amostragem encontrado. Tente clicar em 'Nova Sessão de Prova' para adicionar um novo ponto.
+  </p>
+</section>
+`;

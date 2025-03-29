@@ -1,0 +1,54 @@
+@use '../../main'; 
+
+.session 
+  display: flex
+  justify-content: space-between
+  align-items: center
+  background: #FCFCFC
+  border-radius: 5px
+  padding: 16px
+  margin-bottom: 10px
+  border: 1px solid #E0E0E0
+
+.session-info 
+  h3 
+    margin: 0
+    font-size: 18px
+  
+  p, span 
+    margin: 2px 0
+    font-size: 14px
+    color: #666
+
+.session-actions 
+  display: flex
+  align-items: center
+  gap: 10px
+
+.svg-config
+  transition: transform 0.2s ease
+  cursor: pointer
+  margin: 0
+  width: 20px
+  height: 20px
+  &:hover 
+    transform: scale(1.2)
+
+.action-btn 
+  width: 150px
+  padding: 8px 12px
+  border: none
+  font-size: 14px
+  font-weight: bold
+  border-radius: 5px
+  cursor: pointer
+  color: white
+  &.green 
+    background: main.$cor-secundaria
+  &.grey 
+    background: #BDBDBD
+    cursor: not-allowed
+  @media (max-width: 600px) 
+    width: 100%
+    padding: 0.5
+    font-size: 11px
