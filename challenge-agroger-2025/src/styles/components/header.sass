@@ -1,7 +1,7 @@
-@import '../main' 
+@use '../main'; 
 
 header
-  background-color: $cor-principal
+  background-color: main.$cor-principal
   p
     margin: 0
 
@@ -21,20 +21,19 @@ nav
   svg
     cursor: pointer
 
-
+//template pronto de input search
 .search-box
   width: fit-content
   height: fit-content
   position: relative
 
-//template pronto de input search
 .input-search
   width: 300px
   height: 25px
   border: none
   padding: 7px
   padding-right: 25px
-  font-size: 12px
+  font-size: 11px
   letter-spacing: 2px
   outline: none
   border-radius: 0
@@ -45,7 +44,7 @@ nav
 
   &::placeholder
     color: rgba(255, 255, 255, 0.5)
-    font-size: 12px
+    font-size: 11px
     letter-spacing: 2px
     font-weight: 100
 
